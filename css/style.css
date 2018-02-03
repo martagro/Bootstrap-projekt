@@ -1,0 +1,39 @@
+/*General styles*/
+
+body {
+    font-family: 'RobotoSlab', sans-serif;
+}
+
+/*Nav*/
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-brand {
+    color: #fff;
+    transition: all .3s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-brand:hover {
+    color: #0ed8d6;
+}
+
+.navbar-light .navbar-brand {
+    font-family: 'Droid Serif', sans-serif;
+    font-size: 2em;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+
+/*Header */
+
+#main-header {
+    height: 100vh;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/header/pictures_on_the_wall.jpg);
+    /*powyżej rgba daje szarą maskę na tle obrazkowym*/
+    background-size: cover;
+    background-position: center;
+}
