@@ -26,6 +26,11 @@ h3 {
     margin-top: 20px;
 }
 
+section p {
+    font-family: 'Droid Serif', sans-serif;
+    margin-bottom: 30px;
+}
+
 /*Nav*/
 
 .navbar-light .navbar-nav .nav-link,
@@ -95,11 +100,6 @@ h3 {
 
 /*Services Sekcja*/
 
-#services .section-header p {
-    font-family: 'Droid Serif', sans-serif;
-    margin-bottom: 50px;
-}
-
 #services i {
     width: 80px;
     height: 80px;
@@ -133,12 +133,46 @@ h3 {
     background-color: #f7f7f7;
 }
 
-#portfolio .section-header p {
-    font-family: 'Droid Serif', sans-serif;
-    margin-bottom: 50px;
+
+#portfolio figcaption {
+    background-color: #fff;
+    padding: 10px 0;
 }
 
-#portfolio .row figure img {
-    width: 300px;
-    height: 200px;
+#portfolio .portfolio-image-holder {
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+#portfolio .portfolio-image-holder img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.3s;
+}
+
+#portfolio .portfolio-image-holder:hover img {
+    transform: scale(1.5);
+}
+
+
+#portfolio .portfolio-image-holder .portfolio-mask {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(14, 216, 214, 0.6);
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 2em;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+#portfolio .portfolio-image-holder:hover .portfolio-mask {
+    opacity: 1;
 }
